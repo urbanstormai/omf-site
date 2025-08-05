@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Overseas Mortgage Finance</title>
-
-  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Custom utilities -->
   <style>
-    .gradient-bg{background:linear-gradient(180deg,#5AC8A0 0%,#FAFAFA 100%);}
-    .marquee{display:flex;animation:scroll 25s linear infinite;}
+    .gradient-bg{background:linear-gradient(180deg,#5AC8A0 0%,#FAFAFA 100%)}
+    .marquee{display:flex;animation:scroll 25s linear infinite}
     @keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
     .drawer{opacity:0;pointer-events:none;transform:translateY(20px);transition:.3s}
     .group:hover .drawer{opacity:1;pointer-events:auto;transform:none}
@@ -26,17 +22,9 @@
 <!-- HERO -->
 <section class="gradient-bg text-white py-24 lg:py-32">
   <div class="container mx-auto px-4 max-w-4xl">
-    <h1 class="text-4xl lg:text-6xl font-bold">
-      Mortgages made Simple.<br>Onshore. Offshore. Overseas.
-    </h1>
-    <p class="mt-6 text-xl lg:text-2xl font-semibold">
-      100 % application success in 2024.
-    </p>
-    <a href="#contact"
-       class="inline-block mt-10 bg-gray-900 text-white px-8 py-3 rounded-full
-              hover:bg-white hover:text-gray-900 transition">
-       Book a free call
-    </a>
+    <h1 class="text-4xl lg:text-6xl font-bold">Mortgages made Simple.<br>Onshore. Offshore. Overseas.</h1>
+    <p class="mt-6 text-xl lg:text-2xl font-semibold">100 % application success in 2024.</p>
+    <a href="#contact" class="inline-block mt-10 bg-gray-900 text-white px-8 py-3 rounded-full hover:bg-white hover:text-gray-900 transition">Book a free call</a>
   </div>
 </section>
 
@@ -46,16 +34,16 @@
     <span>ACCESS TO 200+ LENDERS</span>
     <div class="overflow-hidden flex-1">
       <div class="marquee space-x-12 items-center">
-        <!-- SVG/PNG logos (repeat once for smooth loop) -->
-       <img src="https://logo.clearbit.com/santander.co.uk?size=80&format=svg" class="h-12" alt="Santander">
-<img src="https://logo.clearbit.com/hsbc.co.uk?size=80&format=svg" class="h-12" alt="HSBC">
-<img src="https://logo.clearbit.com/barclays.co.uk?size=80&format=svg" class="h-12" alt="Barclays">
-<img src="https://logo.clearbit.com/halifax.co.uk?size=80&format=svg" class="h-12" alt="Halifax">
-<img src="https://logo.clearbit.com/skipton.co.uk?size=80&format=svg" class="h-12" alt="Skipton">
-<img src="https://logo.clearbit.com/virginmoney.com?size=80&format=svg" class="h-12" alt="Virgin Money">
-<img src="https://logo.clearbit.com/nationwide.co.uk?size=80&format=svg" class="h-12" alt="Nationwide">
-<img src="https://logo.clearbit.com/natwest.com?size=80&format=svg" class="h-12" alt="NatWest">
-<img src="https://logo.clearbit.com/lloydsbank.com?size=80&format=svg" class="h-12" alt="Lloyds">
+        <img src="https://cdn.simpleicons.org/santander/ffffff"          class="h-12" alt="Santander">
+        <img src="https://cdn.simpleicons.org/hsbc/ffffff"               class="h-12" alt="HSBC">
+        <img src="https://cdn.simpleicons.org/barclays/ffffff"           class="h-12" alt="Barclays">
+        <img src="https://cdn.simpleicons.org/halifax/ffffff"            class="h-12" alt="Halifax">
+        <img src="https://cdn.simpleicons.org/skiptonbuilding/ffffff"    class="h-12" alt="Skipton">
+        <img src="https://cdn.simpleicons.org/virgin/ffffff"             class="h-12" alt="Virgin Money">
+        <img src="https://cdn.simpleicons.org/nationwide/ffffff"         class="h-12" alt="Nationwide">
+        <img src="https://cdn.simpleicons.org/natwest/ffffff"            class="h-12" alt="NatWest">
+        <img src="https://cdn.simpleicons.org/lloydsbank/ffffff"         class="h-12" alt="Lloyds">
+      </div>
     </div>
   </div>
 </section>
@@ -63,14 +51,10 @@
 <!-- WHAT WE DO -->
 <section id="services" class="py-20 bg-gray-50">
   <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-semibold text-center mb-12">
-      Tailored support for every kind of buyer.
-    </h2>
-git add index.html
-git commit -m "Add Clearbit lender logos"
-
+    <h2 class="text-3xl font-semibold text-center mb-12">Tailored support for every kind of buyer.</h2>
     <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-      <!-- Card template -->
+
+      <!-- UK Buyers -->
       <div class="group relative bg-[#D4F5E5] border rounded-2xl p-6 hover:shadow-xl transition">
         <h3 class="text-xl font-medium">UK Buyers</h3>
         <span class="text-sm text-gray-700 mt-2 block">See more →</span>
@@ -83,6 +67,7 @@ git commit -m "Add Clearbit lender logos"
         </div>
       </div>
 
+      <!-- International Buyers -->
       <div class="group relative bg-[#FFE9D6] border rounded-2xl p-6 hover:shadow-xl transition">
         <h3 class="text-xl font-medium">International Buyers</h3>
         <span class="text-sm text-gray-700 mt-2 block">See more →</span>
@@ -92,8 +77,9 @@ git commit -m "Add Clearbit lender logos"
         </div>
       </div>
 
+      <!-- Specialist & HNW -->
       <div class="group relative bg-[#EDE7F6] border rounded-2xl p-6 hover:shadow-xl transition">
-        <h3 class="text-xl font-medium">Specialist & HNW</h3>
+        <h3 class="text-xl font-medium">Specialist &amp; HNW</h3>
         <span class="text-sm text-gray-700 mt-2 block">See more →</span>
         <div class="drawer absolute inset-0 bg-white p-6 rounded-2xl">
           Bridging • Development • Large loans • Complex income
@@ -101,6 +87,7 @@ git commit -m "Add Clearbit lender logos"
         </div>
       </div>
 
+      <!-- Expats -->
       <div class="group relative bg-[#D6ECFF] border rounded-2xl p-6 hover:shadow-xl transition">
         <h3 class="text-xl font-medium">Expats</h3>
         <span class="text-sm text-gray-700 mt-2 block">See more →</span>
@@ -155,15 +142,21 @@ git commit -m "Add Clearbit lender logos"
   <div class="container mx-auto px-4 max-w-4xl space-y-10">
     <blockquote class="speech-bubble">
       “Seasoned pros—OMF navigated banks, notaires and agents flawlessly, making our overseas purchase effortless.”
-      <footer class="mt-2 text-right text-sm font-medium">— Mr P Russell & Mrs St George</footer>
+      <footer class="mt-2 text-right text-sm font-medium">
+        — Mr P Russell & Mrs St George
+      </footer>
     </blockquote>
     <blockquote class="speech-bubble">
       “Relentless, witty and well-connected, OMF secured my French dream home; I’ll never buy without them.”
-      <footer class="mt-2 text-right text-sm font-medium">— Mr S Birkett</footer>
+      <footer class="mt-2 text-right text-sm font-medium">
+        — Mr S Birkett
+      </footer>
     </blockquote>
     <blockquote class="speech-bubble">
       “After other brokers failed, OMF solved every hurdle fast—simply the best in the business.”
-      <footer class="mt-2 text-right text-sm font-medium">— Mr J Reynolds</footer>
+      <footer class="mt-2 text-right text-sm font-medium">
+        — Mr J Reynolds
+      </footer>
     </blockquote>
   </div>
 </section>
@@ -180,26 +173,17 @@ git commit -m "Add Clearbit lender logos"
 <section id="faq" class="bg-gray-50 py-20">
   <div class="container mx-auto px-4 max-w-3xl">
     <h2 class="text-2xl font-semibold mb-8 text-center">Frequently asked questions</h2>
-
     <details class="mb-4 bg-white p-4 rounded-lg shadow-sm">
       <summary class="font-medium cursor-pointer">How long does approval take?</summary>
-      <p class="mt-2 text-sm text-gray-700">
-        Most clients receive approval in under 10 working days.
-      </p>
+      <p class="mt-2 text-sm text-gray-700">Most clients receive approval in under 10 working days.</p>
     </details>
-
     <details class="mb-4 bg-white p-4 rounded-lg shadow-sm">
       <summary class="font-medium cursor-pointer">Do you charge a broker fee?</summary>
-      <p class="mt-2 text-sm text-gray-700">
-        Our typical fee is 1 % of the approved loan amount, payable on completion.
-      </p>
+      <p class="mt-2 text-sm text-gray-700">Our typical fee is 1 % of the approved loan amount, payable on completion.</p>
     </details>
-
     <details class="mb-4 bg-white p-4 rounded-lg shadow-sm">
       <summary class="font-medium cursor-pointer">Can you help if I live abroad?</summary>
-      <p class="mt-2 text-sm text-gray-700">
-        Absolutely – we specialise in mortgages for UK expats and overseas buyers.
-      </p>
+      <p class="mt-2 text-sm text-gray-700">Absolutely – we specialise in mortgages for UK expats and overseas buyers.</p>
     </details>
   </div>
 </section>
@@ -213,20 +197,9 @@ git commit -m "Add Clearbit lender logos"
 <!-- FOOTER -->
 <footer class="bg-[#111] text-gray-300 text-sm py-10">
   <div class="container mx-auto px-4 space-y-4 max-w-5xl">
-    <a href="/privacy-policy" class="underline">View our Privacy Policy</a>
-
-    <p>
-      We are a credit broker and not a lender. Once we have assessed your needs, we will
-      recommend suitable lenders. Commission may be paid by the lender. Our typical fee is
-      1 % of the loan amount. The FCA does not regulate some forms of overseas mortgages.
-      Your home may be repossessed if you do not keep up repayments on your mortgage.
-    </p>
-
-    <p class="opacity-70">
-      © <span id="year"></span> Overseas Mortgage Finance Ltd · 31a King Street,
-      Stanford-Le-Hope, England, SS17 0HJ · Company No 08028016 · Appointed Representative of
-      Connect IFA (FCA 441505)
-    </p>
+    <a href="/privacy.html" class="underline">View our Privacy Policy</a>
+    <p>We are a credit broker and not a lender. Commission may be paid by lenders. Our typical fee is 1 % of the loan amount. The FCA does not regulate some overseas mortgages. Your home may be repossessed if you do not keep up repayments on your mortgage.</p>
+    <p class="opacity-70">© <span id="year"></span> Overseas Mortgage Finance Ltd · 31a King Street, Stanford-Le-Hope, SS17 0HJ · Company 08028016 · Appointed Representative of Connect IFA (FCA 441505)</p>
   </div>
 </footer>
 

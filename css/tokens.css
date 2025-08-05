@@ -1,0 +1,6 @@
+:root{
+  --mint:#D4F5E5;--sea:#5AC8A0;--charcoal:#1E1E1E;
+  --off:#FAFAFA;--lime:#C6FF00;font-family:'Inter',system-ui,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none}}
