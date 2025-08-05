@@ -1,0 +1,46 @@
+/* root palette, resets, header, hero, etc. as before … */
+
+/* ---------- Header ---------- */
+.header{position:sticky;top:0;z-index:100;background:#fff;transition:box-shadow .3s,backdrop-filter .3s}
+.header.scrolled{backdrop-filter:blur(12px);box-shadow:0 4px 12px rgba(0,0,0,.06)}
+.header__inner{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:1.5rem;padding:.8rem 0}
+.logo img{height:46px;width:auto}
+
+/* Navigation */
+.nav{display:flex;gap:1.5rem;font-weight:500;color:var(--c-primary)}
+.nav a:hover{opacity:.8}
+
+/* Mobile toggle button (hamburger) */
+.nav-toggle{display:none;background:none;border:0;width:32px;height:32px;cursor:pointer;position:relative}
+.nav-toggle__bar,
+.nav-toggle__bar::before,
+.nav-toggle__bar::after{
+  content:'';position:absolute;left:4px;width:24px;height:2px;background:var(--c-primary);transition:.3s}
+.nav-toggle__bar{top:15px}
+.nav-toggle__bar::before{top:-8px}
+.nav-toggle__bar::after{top:8px}
+
+/* Mobile state when menu open */
+.nav-open .nav-toggle__bar{background:transparent}
+.nav-open .nav-toggle__bar::before{transform:rotate(45deg) translateY(0)}
+.nav-open .nav-toggle__bar::after{transform:rotate(-45deg) translateY(0)}
+.nav-open .nav{transform:translateX(0)}
+
+/* ---------- Supersized logo banner ---------- */
+.logo-banner{background:#fff;border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5}
+.banner__inner{display:flex;justify-content:center;align-items:center;height:280px}
+.logo-banner img{height:280px;width:auto}
+
+/* ---------- Responsive tweaks ---------- */
+@media(max-width:680px){
+  .nav{position:fixed;top:0;right:0;height:100%;width:240px;flex-direction:column;gap:1.2rem;
+       background:#fff;padding:5.5rem 1.5rem 2rem;box-shadow:-2px 0 12px rgba(0,0,0,.08);
+       transform:translateX(100%);transition:transform .35s ease}
+  .nav a{color:var(--c-primary);font-weight:600}
+  .nav-toggle{display:block}
+  /* Shrink banner on very small screens */
+  .logo-banner .banner__inner{height:180px}
+  .logo-banner img{height:180px}
+  h1{font-size:2rem}
+  .hero__inner{padding:4.5rem 0 4rem}
+}
